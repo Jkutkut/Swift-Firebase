@@ -13,6 +13,8 @@
 		AC27CA4C29AF3CD7000944D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC27CA4A29AF3CD7000944D9 /* Main.storyboard */; };
 		AC27CA4E29AF3CD9000944D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC27CA4D29AF3CD9000944D9 /* Assets.xcassets */; };
 		AC27CA5129AF3CD9000944D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC27CA4F29AF3CD9000944D9 /* LaunchScreen.storyboard */; };
+		AC27CA5929AF446A000944D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC27CA5829AF446A000944D9 /* GoogleService-Info.plist */; };
+		AC27CA5C29AF47EA000944D9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AC27CA5B29AF47EA000944D9 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		AC27CA4D29AF3CD9000944D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC27CA5029AF3CD9000944D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC27CA5229AF3CD9000944D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC27CA5829AF446A000944D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC27CA5C29AF47EA000944D9 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				AC27CA4D29AF3CD9000944D9 /* Assets.xcassets */,
 				AC27CA4F29AF3CD9000944D9 /* LaunchScreen.storyboard */,
 				AC27CA5229AF3CD9000944D9 /* Info.plist */,
+				AC27CA5829AF446A000944D9 /* GoogleService-Info.plist */,
 			);
 			path = "Swift-Firebase";
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "Swift-Firebase";
+			packageProductDependencies = (
+				AC27CA5B29AF47EA000944D9 /* FirebaseFirestore */,
+			);
 			productName = "Swift-Firebase";
 			productReference = AC27CA4129AF3CD7000944D9 /* Swift-Firebase.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = AC27CA3829AF3CD7000944D9;
+			packageReferences = (
+				AC27CA5A29AF47EA000944D9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = AC27CA4229AF3CD7000944D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC27CA5129AF3CD9000944D9 /* LaunchScreen.storyboard in Resources */,
+				AC27CA5929AF446A000944D9 /* GoogleService-Info.plist in Resources */,
 				AC27CA4E29AF3CD9000944D9 /* Assets.xcassets in Resources */,
 				AC27CA4C29AF3CD7000944D9 /* Main.storyboard in Resources */,
 			);
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC27CA5A29AF47EA000944D9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC27CA5B29AF47EA000944D9 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC27CA5A29AF47EA000944D9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC27CA3929AF3CD7000944D9 /* Project object */;
 }

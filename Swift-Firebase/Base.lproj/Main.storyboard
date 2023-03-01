@@ -31,19 +31,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nombre y Apellidos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne3-r1-OQd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre y Apellidos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne3-r1-OQd">
                                 <rect key="frame" x="42" y="171" width="149" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Expediente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcI-o7-eip">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expediente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcI-o7-eip">
                                 <rect key="frame" x="42" y="95" width="85" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KQ-By-n6E">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KQ-By-n6E">
                                 <rect key="frame" x="42" y="247" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -53,16 +53,25 @@
                                 <rect key="frame" x="42" y="335" width="330" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Almacenar"/>
+                                <connections>
+                                    <action selector="onBtnAlmacenar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zA7-L2-PRl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hM-jo-zke">
                                 <rect key="frame" x="42" y="387" width="330" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Recuperar"/>
+                                <connections>
+                                    <action selector="onBtnRecuperar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZaJ-4m-sO6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02m-7Q-YNn">
                                 <rect key="frame" x="42" y="439" width="330" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Eliminar"/>
+                                <connections>
+                                    <action selector="onBtnEliminar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4cw-vs-95m"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -71,12 +80,14 @@
                             <constraint firstItem="9hM-jo-zke" firstAttribute="top" secondItem="glx-Uq-4Nu" secondAttribute="bottom" constant="21" id="65d-Me-Y3M"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9hM-jo-zke" secondAttribute="trailing" constant="42" id="88k-F2-n6t"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C5j-jx-5LZ" secondAttribute="trailing" constant="42" id="9RD-Ef-9Pv"/>
+                            <constraint firstItem="5KQ-By-n6E" firstAttribute="leading" secondItem="8Cl-Au-pCs" secondAttribute="leading" id="BgT-jw-pSR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="glx-Uq-4Nu" secondAttribute="trailing" constant="42" id="EuQ-zk-Jsq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MYK-f7-YIU" secondAttribute="trailing" constant="42" id="GFj-U2-qjG"/>
                             <constraint firstItem="9hM-jo-zke" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="I4A-OR-qI3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="02m-7Q-YNn" secondAttribute="trailing" constant="42" id="JYA-tN-Gqv"/>
                             <constraint firstItem="02m-7Q-YNn" firstAttribute="top" secondItem="9hM-jo-zke" secondAttribute="bottom" constant="21" id="L1x-aX-nP9"/>
                             <constraint firstItem="C5j-jx-5LZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="PAN-ID-nYJ"/>
+                            <constraint firstItem="FcI-o7-eip" firstAttribute="leading" secondItem="C5j-jx-5LZ" secondAttribute="leading" id="RGC-S4-WxR"/>
                             <constraint firstItem="8Cl-Au-pCs" firstAttribute="top" secondItem="MYK-f7-YIU" secondAttribute="bottom" constant="42" id="TKW-Un-xnB"/>
                             <constraint firstItem="C5j-jx-5LZ" firstAttribute="top" secondItem="FcI-o7-eip" secondAttribute="bottom" constant="12" id="ZPW-JF-Kgu"/>
                             <constraint firstItem="MYK-f7-YIU" firstAttribute="top" secondItem="C5j-jx-5LZ" secondAttribute="bottom" constant="42" id="eG4-qP-KZJ"/>
@@ -84,6 +95,7 @@
                             <constraint firstItem="8Cl-Au-pCs" firstAttribute="top" secondItem="5KQ-By-n6E" secondAttribute="bottom" constant="12" id="gaX-6j-fdC"/>
                             <constraint firstItem="C5j-jx-5LZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="hJl-kr-ha1"/>
                             <constraint firstItem="MYK-f7-YIU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="kEh-kG-Uli"/>
+                            <constraint firstItem="Ne3-r1-OQd" firstAttribute="leading" secondItem="MYK-f7-YIU" secondAttribute="leading" id="o2m-sD-NUe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Cl-Au-pCs" secondAttribute="trailing" constant="42" id="pE4-wx-giZ"/>
                             <constraint firstItem="glx-Uq-4Nu" firstAttribute="top" secondItem="8Cl-Au-pCs" secondAttribute="bottom" constant="21" id="qhR-dE-nMv"/>
                             <constraint firstItem="MYK-f7-YIU" firstAttribute="top" secondItem="Ne3-r1-OQd" secondAttribute="bottom" constant="12" id="v2G-15-rt7"/>
